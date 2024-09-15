@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="custom.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <section id="Home" class="container">  
@@ -48,10 +50,24 @@
         </div>
 
         <!-- Sezione Foto Personale -->
-        <div id="foto-personale" class="container-fluid">
-            <img src="images/foto_citazione.jpg" alt="Foto Personale" class="foto-personale">
-            <p class="d-md-none">“Creare soluzioni significative e sostenibili, con l'obiettivo di generare un impatto positivo nella società.”</p>
+        <div id="foto-personale" div class="container-fluid p-0 m-0">
+            <div class="d-none d-md-grid container">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/foto_citazione.jpg" alt="Foto Personale" class=" border rounded-3">
+                        
+                    </div>
+                    <p class="col">
+                        “Creare soluzioni significative e sostenibili, con l'obiettivo di generare un impatto positivo nella società.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-md-none">
+                <img src="images/foto_citazione2.jpg" alt="Foto Personale" class="border rounded-3">
+            </div>
         </div>
+        
 
     </section>
     
@@ -128,7 +144,23 @@
         </div>
     </section>
     
-    <section id="Skills" class="">  
+    <section id="Skills" class="container">
+        <div class="col-6">
+            <img src="images/P_6.png" class="img-fluid" alt="Immagine 7">
+        </div>
+
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"  aria-controls="collapseWidthExample">
+            Product design
+        </button>
+    </p>
+        <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+                Esperto in modellazione 3D, disegno geometrico, renderizzazione e ingegnerizzazione del prodotto.
+            </div>
+        </div>
+        </div>
         
     </section>
     
