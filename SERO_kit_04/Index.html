@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="custom.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        .collapse-content {
+            max-width: 100%; /* Assicura che il contenuto del collapse non superi la larghezza della colonna */
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills-item {
+            text-align: center; /* Centra il testo e gli elementi all'interno della colonna */
+        }
+    </style>
 </head>
 <body>
     <section id="Home" class="container">  
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid" style="padding: 0 12px;"> <!-- Aggiunti margini laterali -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto w-100 justify-content-between">
-                <a class="nav-link" href="#">Profile</a>
-                <a class="nav-link" href="#">Project</a>
-                <a class="nav-link" href="#">Skills</a>
-                <a class="nav-link" href="#">Contact</a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto w-100 justify-content-between">
+                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#">Project</a>
+                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     
@@ -52,10 +65,9 @@
         <!-- Sezione Foto Personale -->
         <div id="foto-personale" class="container-fluid p-0 m-0">
             <div class="d-none d-md-grid container h-50">
-                <div class="row align-items-center align-self-center justify-content-evenly ">
+                <div class="row align-items-center align-self-center justify-content-evenly">
                     <div class="col d-flex justify-content-center">
                         <img src="images/foto_citazione.jpg" alt="Foto Personale" class="rounded-3" height="50%" width="50%">
-                        
                     </div>
                     <p class="col">
                         “Creare soluzioni significative e sostenibili, con l'obiettivo di generare un impatto positivo nella società.”
@@ -67,127 +79,208 @@
                 <img src="images/foto_citazione2.jpg" alt="Foto Personale" class="border rounded-3">
             </div>
         </div>
-        
-
     </section>
     
     <section id="Profile" class="container">  
         <div class="container-fluid">
-        <div class="row mt-5">
-            <!-- Primo Container -->
-            <div class="col-6">
-                <div class="container-fluid" style="width: 100%;">
-                    <div class="row">
-                        <!-- Colonna 1 del primo container -->
-                        <div class="col">
-                            <div class="row mb-3">
-                                <img src="images/P_1.png" class="img-fluid" alt="Immagine 1">
+            <div class="row mt-5">
+                <!-- Primo Container -->
+                <div class="col-6">
+                    <div class="container-fluid" style="width: 100%;">
+                        <div class="row">
+                            <!-- Colonna 1 del primo container -->
+                            <div class="col">
+                                <div class="row mb-3">
+                                    <img src="images/P_1.png" class="img-fluid" alt="Immagine 1">
+                                </div>
+                                <div class="row mb-3">
+                                    <img src="images/P_4.png" class="img-fluid" alt="Immagine 2">
+                                </div>
+                                <div class="row mb-3">
+                                    <img src="images/P_6.png" class="img-fluid" alt="Immagine 3">
+                                </div>
                             </div>
-                            <div class="row mb-3">
-                                <img src="images/P_2.png" class="img-fluid" alt="Immagine 2">
-                            </div>
-                            <div class="row mb-3">
-                                <img src="images/P_3.png" class="img-fluid" alt="Immagine 3">
-                            </div>
-                        </div>
-                        <!-- Colonna 2 del primo container -->
-                        <div class="col">
-                            <div class="row mb-3">
-                                <img src="images/P_4.png" class="img-fluid" alt="Immagine 4">
-                            </div>
-                            <div class="row mb-3">
-                                <img src="images/P_5.png" class="img-fluid" alt="Immagine 5">
-                            </div>
-                            <div class="row mb-3">
-                                <img src="images/P_6.png" class="img-fluid" alt="Immagine 6">
+                            <!-- Colonna 2 del primo container -->
+                            <div class="col">
+                                <div class="row mb-3">
+                                    <img src="images/P_2.png" class="img-fluid" alt="Immagine 4">
+                                </div>
+                                <div class="row mb-3">
+                                    <img src="images/P_5.png" class="img-fluid" alt="Immagine 5">
+                                </div>
+                                <div class="row mb-3">
+                                    <img src="images/P_7_io.png" class="img-fluid" alt="Immagine 6">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Secondo Container Affiancato -->
-            <div class="col-6">
-                <div class="container-fluid" style="width: 100%;">
-                    <!-- Prima riga: immagine a sinistra, spazio vuoto a destra -->
-                    <div class="row">
-                        <!-- Colonna 1 (Immagine) -->
-                        <div class="col-6">
-                            <img src="images/P_6.png" class="img-fluid" alt="Immagine 7">
+                <!-- Secondo Container Affiancato -->
+                <div class="col-6">
+                    <div class="container-fluid" style="width: 100%;">
+                        <!-- Prima riga: immagine a sinistra, spazio vuoto a destra -->
+                        <div class="row">
+                            <!-- Colonna 1 (Immagine) -->
+                            <div class="col-6">
+                                <img src="images/P_3.png" class="img-fluid" alt="Immagine 7">
+                            </div>
+                            <!-- Colonna 2 (Spazio vuoto) -->
+                            <div class="col-6">
+                                <!-- Spazio vuoto -->
+                            </div>
                         </div>
-                        <!-- Colonna 2 (Spazio vuoto) -->
-                        <div class="col-6">
-                            <!-- Spazio vuoto -->
-                        </div>
-                    </div>
                     
-                
-
                         <!-- Seconda riga: h2 che occupa tutta la larghezza -->
+                        <div class="row mt-5 mb-5">
+                            <div class="col-12">
+                                <h2 class="text-end">*Profile</h2>
+                            </div>
+                        </div>
+
+                        <!-- Terza riga: Paragrafo che occupa tutta la larghezza -->
                         <div class="row mt-3">
                             <div class="col-12">
-                                <h2 class="text-center">*Profile</h2>
+                                <p class="text-justified">
+                                    Laureata in Product Design presso l'IAAD di Bologna e diplomata al Liceo Artistico Dosso Dossi di Ferrara con specializzazione in Design dell'arredo e del legno. 
+                                    Attualmente, specializzanda in design Sistemico dei servizi presso ISIA a Roma.
+                                </p>
                             </div>
-                        </div>
-
-                    <!-- Terza riga: Paragrafo che occupa tutta la larghezza -->
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <p class="text-justified">
-                                Laureata in Product Design presso l'IAAD di Bologna e diplomata al Liceo Artistico Dosso Dossi di Ferrara con specializzazione in Design dell'arredo e del legno. 
-                                Attualmente, specializzanda in design Sistemico dei servizi presso ISIA a Roma.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="Skills" class="container">
-        <div class="col-6">
-            <img src="images/P_6.png" class="img-fluid" alt="Immagine 7">
-        </div>
 
-    <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"  aria-controls="collapseWidthExample">
-            Product design
-        </button>
-    </p>
-        <div style="min-height: 120px;">
-        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-            <div class="card card-body" style="width: 300px;">
-                Esperto in modellazione 3D, disegno geometrico, renderizzazione e ingegnerizzazione del prodotto.
+        <section id="skills">
+            <div class="container">
+            <!-- Titolo -->
+            <div class="row">
+                <div class="col-12 mb-4 mt-4">
+                <h2 class="text-end">*Skills</h2>
+                </div>
             </div>
-        </div>
-        </div>
         
-    </section>
-    
-    <section id="Project" class="">  
+            <!-- Righe di colonne -->
+            <div class="row justify-content-center">
+                <!-- Colonna 1 -->
+                <div class="col-6 col-md-2 mb-1 mb-md-3 d-flex flex-column align-items-center skills-item">
+                <img src="images/skills 1.png" class="img-fluid border rounded-3" alt="Skills product">
+                <p>
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProduct" aria-controls="collapseProduct">
+                    Product Design
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseProduct">
+                    <div class="card card-body collapse-content">
+                        Esperto in modellazione 3D, disegno geometrico, renderizzazione e ingegnerizzazione del prodotto.
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Colonna 2 -->
+                <div class="col-6 col-md-2 mb-1 mb-md-3 d-flex flex-column align-items-center skills-item">
+                <img src="images/skills 2.png" class="img-fluid border rounded-3" alt="Skills interior">
+                <p>
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInterior" aria-controls="collapseInterior">
+                    Interior Design
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseInterior">
+                    <div class="card card-body collapse-content">
+                        Esperto in design degli interni, ottimizzazione degli spazi e creazione di ambienti funzionali e esteticamente gradevoli.
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Colonna 3 -->
+                <div class="col-6 col-md-2 mb-1 mb-md-3 d-flex flex-column align-items-center skills-item">
+                <img src="images/skills 3.png" class="img-fluid border rounded-3" alt="Skills service">
+                <p>
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseService" aria-controls="collapseService">
+                    Service Design
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseService">
+                    <div class="card card-body collapse-content">
+                        Esperto in design dei servizi, analisi e miglioramento dei processi per una migliore esperienza utente.
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Colonna 4 -->
+                <div class="col-6 col-md-2 mb-3 d-flex flex-column align-items-center skills-item">
+                <img src="images/skills 4.png" class="img-fluid border rounded-3" alt="Skills interaction">
+                <p>
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInteraction" aria-controls="collapseInteraction">
+                    Interaction Design
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseInteraction">
+                    <div class="card card-body collapse-content">
+                        Esperto in design dell'interazione, creazione di interfacce utente intuitive e coinvolgenti.
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Colonna 5 -->
+                <div class="col-6 col-md-2 mb-3 d-flex flex-column align-items-center skills-item">
+                <img src="images/skills 5.png" class="img-fluid border rounded-3" alt="Skills UX/UI">
+                <p>
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUXUI" aria-controls="collapseUXUI">
+                    UX/UI Design
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseUXUI">
+                    <div class="card card-body collapse-content">
+                        Esperto in design UX/UI, creazione di esperienze utente eccezionali e interfacce grafiche accattivanti.
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      
+        
+
+    <section id="Project">
         <nav>
-            
+            <!-- Project navigation (empty) -->
         </nav>
         <div id="Odissea del caffè">
-
+            <!-- Project content (empty) -->
         </div>
         <div id="Repairo X">
-
+            <!-- Project content (empty) -->
         </div>
         <div id="Il cibo è giusto">
-
+            <!-- Project content (empty) -->
         </div>
         <div id="Aboca farmacie">
-
+            <!-- Project content (empty) -->
         </div>
         <div id="S-nap">
-
+            <!-- Project content (empty) -->
         </div>
     </section>
     
-    <section id="Contact" class="">  
-        
+    <section id="Contact">
+        <!-- Contact section (empty) -->
     </section>
     
+    <!-- Bootstrap JS (include Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
