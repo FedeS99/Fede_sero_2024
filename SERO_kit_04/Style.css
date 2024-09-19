@@ -183,23 +183,7 @@ body {
 
 
 
-/* Sezione Formazione ed Esperienza */
-.formazione {
-  font-family: 'Karla', sans-serif;
-  font-weight: 300;
-  font-size: 2.5rem;
-  color: #000;
-  text-align: center;
-}
 
-.dettagli-formazione {
-  font-family: 'Karla', sans-serif;
-  font-weight: 300;
-  color: #000;
-  font-size: 1rem;
-  text-align: justify;
-  margin-top: 1rem;
-}
 
 h3 {
   font-family: 'Roboto Mono', monospace; /* Usa Roboto Mono */
@@ -282,32 +266,8 @@ h3 {
   .folio-title {
     font-size: 7rem;
   }
-
-  
-  #foto-personale {
-    width: 50%;
-    margin: 0; /* Rimuove margini aggiuntivi */
-    padding: 0; /* Rimuove padding se presente */
-  }
-  
-  .foto-personale {
-    width: 100%;
-    height: auto; /* Mantiene le proporzioni */
-  }
 }
+
   
-  .text-md-end {
-    text-align: right !important;
-  }
+  
 
-  .text-md-start {
-    text-align: left !important;
-  }
-
-  #progetti img {
-    width: 100%;
-    height: auto;
-
-  }
-
- 
