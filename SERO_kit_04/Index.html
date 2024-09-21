@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body class="mx-0 px-0">
@@ -25,27 +26,26 @@
             </div>
         </nav>
 
-        <div id="Titolo" class="container-fluid">
-            <div class="row h-100">
-                <!-- Colonna vuota per desktop -->
-                <div class="col-12 col-md-5"></div>
-                <div class="col-12 col-md-7 d-flex flex-column justify-content-center align-items-start text-start">
+        <div id="Titolo" class="container-fluid my-md-5 py-md-5">
+            <div class="row">
+                
+                <div class="col d-flex flex-column ">
                     <!-- Testo sopra il titolo -->
-                    <p class="service-description">Service & Product Design</p>
+                    <p id="service-description">Service & Product Design</p>
                     <!-- Titoli principali -->
-                    <div class="row">
+                    <div class="row roboto-mono text-start">
                         <div class="col-12">
-                            <h1 class="portfolio-title port-title">PORT</h1>
+                            <h1 id="PORT" >PORT</h1>
                         </div>
                         <div class="col-12">
-                            <h1 class="portfolio-title folio-title">FOLIO</h1>
+                            <h1 id="FOLIO" >FOLIO</h1>
                         </div>
                     </div>
                     <!-- Paragrafo aggiuntivo con "Federica" sotto gli H1 -->
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="federica-text">Federica</p>
-                        </div>
+                    <div class="row roboto-mono justify-content-end text-end">
+                            <div class="col-12" id="nome">
+                                Federica
+                            </div>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="d-md-none">
-                <img src="images/foto_citazione_Mob.svg" alt="Foto Personale" class="border rounded-3">
+                <img src="images/foto_citazione_Mob.svg" alt="Foto Personale" class=" img-fluid border rounded-3">
             </div>
         </div>
     </section>
@@ -114,13 +114,13 @@
             </div>
 
             <div class="row">
-                <div class="col-12 mb-4 mt-4">
-                    <h2 class="text-end">*Profile</h2>
+                <div class="col-12 mb-4 mt-4 pt-4">
+                    <h2 class="text-end ">*Profile</h2>
                 </div>
             </div>
 
             <div class="row justify-content-md-evenly ">
-                <div class="col-md-6 mt-5 mb-5">
+                <div class="col-md-6 mt-5 mb-5 bg-white border border-light border-3 rounded-3">
                     <h3 class="text-center text-md-start mb-md-5">Formazione</h3>
                     <div class="row justify-content-md-center"> 
                         <p class="text-center text-md-start col-md-10">
@@ -131,7 +131,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 mt-5 mb-5">
+                <div class="col-md-6 mt-5 mb-5 bg-white border border-light border-3 rounded-3">
                     <h3 class="text-center text-md-end mb-md-5">Esperienza</h3>
                     <div class="row justify-content-md-center"> 
                         <p class="text-center text-md-start col-md-10">
@@ -150,7 +150,7 @@
                     <img src="images/IO.png" class="img-fluid border rounded-3 d-md-none" alt="Skills product">
                     <img src="images/IO.png" class="d-none border rounded-3 d-md-block" alt="Skills product" height="420">
                 </div>
-                <div class="col-md-6 mt-5 mb-5">
+                <div class="col-md-6 mt-5 mb-5 bg-white border border-light border-3 rounded-3">
                     <h3 class="text-center text-md-end mb-md-5">Metodo</h3>
                     <div class="row justify-content-md-center">
                         <div class=" d-none col-md-2"></div>
@@ -174,7 +174,7 @@
         <div class="container">
             <!-- Titolo -->
             <div class="row">
-                <div class="col-12 mb-4 mt-4">
+                <div class="col-12 mb-4 mt-4 pt-4">
                     <h2 class="text-end">*Skills</h2>
                 </div>
             </div>
@@ -185,8 +185,8 @@
                 <div class="row col-md-2 mt-1 mb-1">
                     <div class="col-6">
                         <img src="images/skills 1.png" class="img-fluid border rounded-3" alt="Skills product">
-                        <p class="my-0 py-4 fw-bolder fs-4">
-                            Product Design
+                        <p class="my-0 py-4 fw-bolder fs-4 roboto-mono text-center">
+                            Product 
                         </p>
                     </div>
                     <div class="card card-body col-6 ">
@@ -203,8 +203,8 @@
                     </div>
                     <div class="col-6">
                         <img src="images/skills 2.png" class="img-fluid border rounded-3" alt="Skills interior">
-                        <p class="my-0 py-4 fw-bolder fs-4">
-                            Interior Design
+                        <p class="my-0 py-4 fw-bolder fs-4 roboto-mono text-center">
+                            Interior 
                         </p>
                     </div>
                 </div>
@@ -212,8 +212,8 @@
                 <div class="row col col-md-2 mt-1 mb-1">
                     <div class="col-6 ">
                         <img src="images/skills 3.png" class="img-fluid border rounded-3" alt="Skills service">
-                        <p class="my-0 py-4 fw-bolder fs-4">
-                            Service Design
+                        <p class="my-0 py-4 fw-bolder fs-4 roboto-mono text-center">
+                            Service 
                         </p>
                     </div>
                     <div class="card card-body col-6  ">
@@ -229,8 +229,8 @@
                     </div>
                     <div class="col-6 ">
                         <img src="images/skills 4.png" class="img-fluid border rounded-3" alt="Skills interaction">
-                        <p class="my-0 py-4 fw-bolder fs-4">
-                            Interaction Design
+                        <p class="my-0 py-4 fw-bolder fs-4 roboto-mono text-center">
+                            Interaction 
                         </p>
                     </div>
                 </div>
@@ -238,8 +238,8 @@
                 <div class="row col-md-2">
                     <div class="col-6 ">
                         <img src="images/skills 5.png" class="img-fluid border rounded-3" alt="Skills UX/UI">
-                        <p class="my-0 py-4 fw-bolder fs-4">
-                            UX/UI Design
+                        <p class="my-0 py-4 fw-bolder fs-4 roboto-mono text-center">
+                            UX/UI 
                         </p>
                     </div>
                     <div class="card card-body col-6  ">
@@ -330,7 +330,7 @@
     <section id="Project" class="mx-auto">
 
         <div class="container">
-            <div class="col-12 mb-4 mt-4">
+            <div class="col-12 mb-4 mt-4 pt-4">
                 <h2 class="text-end">*Project</h2>
             </div>
         </div>
@@ -765,12 +765,12 @@
         <div class="container">
             
             <div class="row">
-                <div class="col-12 mb-4 mt-4">
+                <div class="col-12 mb-4 mt-4 pt-4">
                     <h2 class="text-end">*Contact</h2>
                 </div>
             </div>
     
-            
+            <!--mobile contact-->
             <div class="row row-cols-1 justify-content-center d-md-none">
                 <!--insta-->
                 <div class="row">
@@ -803,29 +803,26 @@
                 </div>
             </div>
     
-            
+            <!--desktop contact-->
             <div class="row d-none d-md-flex justify-content-between align-items-baseline mt-md-5">
                 
                 <div class="col-2 justify-content-center align-items-center text-center">
-                    <img src="images/Contact_IG1.svg" class="img-fluid" alt="Instagram">
                     <a href="https://www.instagram.com/sero_federica_design/" class="my-0 py-4 fs-4 btn btn-primary btn-sm" role="button" target="_blank" rel="noopener noreferrer">
-                        sero_federica_design
+                        <img src="images/Contact_IG1.svg" class="img-fluid" alt="Instagram">
                     </a>
                 </div>
     
                 
                 <div class="col-2 justify-content-center align-items-center text-center">
-                    <img src="images/Contact_GM1.svg" class="img-fluid" alt="E-mail">
                     <a href="mailto:serofederica98@gmail.com" class="my-0 py-4 fs-4 btn btn-primary" role="button">
-                        serofederica98@gmail.com
+                        <img src="images/Contact_GM1.svg" class="img-fluid" alt="E-mail">
                     </a>
                 </div>
     
                 
                 <div class="col-2 justify-content-center align-items-center text-center">
-                    <img src="images/Contact_LK1.svg" class="img-fluid" alt="LinkedIn">
                     <a href="https://www.linkedin.com/in/federica-sero-ab95ab1b5/" class="my-0 py-4 fs-4 btn btn-primary" role="button" target="_blank" rel="noopener noreferrer">
-                        Federica Sero
+                        <img src="images/Contact_LK1.svg" class="img-fluid" alt="LinkedIn">
                     </a>
                 </div>
                 
