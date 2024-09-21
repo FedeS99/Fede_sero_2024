@@ -73,14 +73,15 @@ h5 .karla {
 }
 
 h1 {
-  font-size: 8rem; 
+  font-size: 6.5rem;
+  font-weight: 300; 
   text-align: left; 
   color: #000000; /* Colore del testo */
   padding-top: 4rem; /* Spazio sopra l'elemento */
 }
 
 h2 {
-  font-size: 6.5rem; 
+  font-size: 3rem; 
   font-style: italic;
   text-align: left; 
   letter-spacing: 0.4rem;
@@ -168,30 +169,6 @@ body {
   margin-top: 2rem;
 }
 
-/* Stile per la sezione Foto Personale */
-#foto-personale {
-  padding: 0;
-  margin: 0;
-}
-
-/* Immagine della sezione Foto Personale */
-.foto-personale {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Stile per la sezione Progetti */
-#progetti {
-  padding: 0 12px;
-}
-
-#progetti img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
 
 
 
@@ -204,13 +181,13 @@ h3 {
   margin: 0;
 }
 
-/* Stili di base per h3 */
+/* 
 h3 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 6.5rem; /* Dimensione per desktop */
-  font-style: italic; /* Imposta il testo in corsivo */
-  font-weight: 400; /* Peso del font (normal) */
-}
+  font-size: 6.5rem; 
+  font-style: italic; 
+  font-weight: 400;
+} */
 
 /* Stili specifici per schermi più piccoli (mobile) */
 @media (max-width: 767px) {
@@ -234,26 +211,6 @@ h3 {
 
   #cover {
     text-align: left;
-  }
-
-  .formazione {
-    font-size: 2.5rem;
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .dettagli-formazione {
-    font-size: 1rem;
-    width: 100%;
-  }
-
-  #progetti img {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .text-md-end, .text-md-start {
-    text-align: center !important;
   }
 }
 
