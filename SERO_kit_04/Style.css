@@ -20,6 +20,17 @@ body {
 }
 
 
+.navbar {
+z-index: 2;
+}
+
+.blur-bg{
+backdrop-filter: blur(20px);
+}
+.blur-l{
+backdrop-filter: blur(5px);
+}
+
 
 #PORT,#FOLIO {
   font-size: 6.5rem;
@@ -45,34 +56,11 @@ p {
   line-height: 1.5;
 }
 
-
-
-
-
-
-
-
-/* Imposta lo stile di base per il corpo della pagina 
-body {
-  margin: 0;
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  color: #000;
-  background-color: transparent; correggilo  
-}
-
-
-/* Stile per la sezione cover */
-
-
 .service-description {
-  font-family: 'Karla', sans-serif;
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 0.5rem;
-  color: #000;
 }
-
 
 
 h3 {
@@ -82,18 +70,16 @@ h3 {
   margin: 0;
 }
 
-/* 
-h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 6.5rem; 
-  font-style: italic; 
-  font-weight: 400;
-} */
-
 /* Stili specifici per schermi più piccoli (mobile) */
 @media (max-width: 767px) {
   h3 {
     font-size: 3rem; /* Dimensione per mobile */
   }
+
+  #nome {
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+
 }
 
